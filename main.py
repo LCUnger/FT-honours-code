@@ -16,9 +16,6 @@ for i in range(N_x):
 
 result = np.array([[x_arr,T_arr,theta_arr]])
 
-# for i in range(N_t-1):
-#     result = np.append(result,[[x_arr,T_arr,theta_arr]],axis=0)
-
 print(CA_arr[0])
 
 T_next = np.zeros(N_x)
@@ -51,5 +48,8 @@ while theta_arr[-2] < 1:
     print('next')
 
 print(result.shape)
+
+# for i in range(N_t-1):
+#     result = np.append(result,[[x_arr,T_arr,theta_arr]],axis=0)
 
 np.save('results', result)
