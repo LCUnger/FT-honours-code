@@ -6,6 +6,8 @@ data_path = 'results.npy'
 
 data = np.load(data_path)
 
+print(data.shape)
+
 fig, ax = plt.subplots()
 line, = ax.plot([], [])
 
